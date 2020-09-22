@@ -1,8 +1,5 @@
 import React from "react"
-//import Footer from "./footer"
 import { Link } from "gatsby"
-import MediaLinks from "./mediaLinks";
-//import Jumbotron from "react-bootstrap/Jumbotron";
 import "./layout.css"
 
 const ListLink = props => (
