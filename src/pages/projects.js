@@ -14,7 +14,7 @@ export default function Projects() {
             </div>
             <Header headerText="Max&Program"/>
             <p>
-                As someone who loves powerlifting, I am fascinated by the creativity and variations of effective
+                As someone who loves powerlifting, I am fascinated by the many variations of effective
                 training programs that powerlifting coaches put out online, and I enjoy analyzing these different
                 programs to learn about programming for strength training.
             </p>
@@ -45,8 +45,13 @@ export default function Projects() {
             </p>
             <p>Below is a basic demonstration of how I created the StrongLifts 5x5 program.</p>
             <Video
-                videoSrcURL="https://www.youtube.com/embed/J9yvcUJ4srY?loop=1&playlist=J9yvcUJ4srY"//"https://www.youtube.com/embed/dQw4w9WgXcQ?loop=1&playlist=dQw4w9WgXcQ"
+                videoSrcURL="https://www.youtube.com/embed/J9yvcUJ4srY?loop=1&playlist=J9yvcUJ4srY"
                 videoTitle="StrongLifts 5x5 Remake"
+            />
+            <p>Below is a demonstration of using the 1RM calculator.</p>
+            <Video
+                videoSrcURL="https://www.youtube.com/embed/-QGvSEZoLeQ?loop=1&playlist=-QGvSEZoLeQ"
+                videoTitle="1RM Calculator"
             />
         </Layout>
     );
