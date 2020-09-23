@@ -40,20 +40,13 @@ export default function Projects() {
                 novice lifters who do not necessarily need to understand how the app handles the progression strategy
                 of their own programs. As a result, it was a challenge to determine the best balance of determining
                 which parts of the program creation process should be up to the user's creativity and which parts should
-                be left as invariants. However, I will continue improving the design as I learn more about
-                how
-                much creative freedom the app should give the users and how much of the program creation process should
-                be
-                allowing users
-                enough freedom to be creative when designing their programs and
-                keeping certain
-                scientific training principles abstracted from the user
-                (this was a challenge to find the right balance point, but i will continue
-                improving this app as i continue learning about effective programming)
+                be left as invariants. However, I will continue improving the design as I learn more about effective
+                powerlifting programming.
             </p>
+            <p>Below is a basic demonstration of how I created the StrongLifts 5x5 program.</p>
             <Video
-                videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ?loop=1&playlist=dQw4w9WgXcQ"
-                videoTitle="Official Music Video on YouTube"
+                videoSrcURL="https://www.youtube.com/embed/J9yvcUJ4srY?loop=1&playlist=J9yvcUJ4srY"//"https://www.youtube.com/embed/dQw4w9WgXcQ?loop=1&playlist=dQw4w9WgXcQ"
+                videoTitle="StrongLifts 5x5 Remake"
             />
         </Layout>
     );
