@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./layout.css"
+import Col from "react-bootstrap/Col";
 
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>

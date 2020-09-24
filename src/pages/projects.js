@@ -20,8 +20,8 @@ export default function Projects() {
             </p>
             <p>
                 Through years of experience using various training programs, I realized that despite being diverse
-                in design, all effective programs share the same scientific principles of strength training. I figured
-                it would be extremely helpful for lifters to use an app that would create customizable training
+                in their design, all effective programs share the same scientific principles of strength training. I
+                figured it would be extremely helpful for lifters to use an app that would create customizable training
                 programs but would also adhere to the scientific principles for effective programming; unfortunately,
                 I could not find any fitness app that satisfies this criteria to my liking.
             </p>
