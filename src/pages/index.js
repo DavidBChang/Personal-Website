@@ -3,6 +3,9 @@ import Title from "../components/title";
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Col from "react-bootstrap/Col";
+import {
+    FaRegEnvelope, FaGithub, FaLinkedinIn
+} from 'react-icons/fa';
 
 export default function Home() {
     return (
@@ -18,24 +21,33 @@ export default function Home() {
                     <Col>
                         <a
                             href="https://www.github.com/DavidBChang/"
+                            title="Check out my GitHub!"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            GitHub
+                            <FaGithub hover_effect/>
                         </a>
                     </Col>
 
                     <Col>
                         <a
                             href="https://www.linkedin.com/in/changdavidb/"
+                            title="Check out my LinkedIn!"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            LinkedIn
+                            <FaLinkedinIn />
                         </a>
                     </Col>
 
                     <Col>
                         <a
                             href="mailto:changd8@uw.edu"
+                            title="Email me!"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Email
+                            <FaRegEnvelope />
                         </a>
                     </Col>
                 </ul>
