@@ -11,6 +11,7 @@ import Row from "react-bootstrap/Row";
 import MaxPrev from "../images/Max&ProgramPreview.png";
 import Container from "react-bootstrap/Container";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import resume from "../../static/Resume.pdf"
 
 export default function Home() {
     return (
@@ -20,64 +21,75 @@ export default function Home() {
                 I am an aspiring software developer and a rising junior at <br/> University of Washington, Seattle,
                 studying computer science.
             </p>
-            <Header headerText="Links" />
+
             <footer>
+                <Header headerText="Links" />
                 <Row>
-                    <ul style={{ listStyle: `none`, float: `center` }}>
-                        <Col>
-                            <a
-                                href="https://www.github.com/DavidBChang/"
-                                title="Check out my GitHub!"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaGithub />
-                            </a>
-                        </Col>
+                    <Col>
 
-                        <Col>
-                            <a
-                                href="https://www.linkedin.com/in/changdavidb/"
-                                title="Check out my LinkedIn!"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaLinkedinIn />
-                            </a>
-                        </Col>
+                    </Col>
 
-                        <Col>
-                            <a
-                                href="mailto:changd8@uw.edu"
-                                title="Email me!"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaRegEnvelope />
-                            </a>
-                        </Col>
+                    <Col>
+                        <a
+                            href="https://www.github.com/DavidBChang/"
+                            title="Check out my GitHub!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaGithub />
+                        </a>
+                    </Col>
+                    <Col>
+                        <a
+                            href="https://www.linkedin.com/in/changdavidb/"
+                            title="Check out my LinkedIn!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaLinkedinIn />
+                        </a>
+                    </Col>
 
-                        <Col>
-                            <a
-                                href="../images/Resume.pdf"
-                                title="Check out my Resume!"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaFilePdf />
-                            </a>
-                        </Col>
-                    </ul>
-                    <ProjectPreview
-                        imageSrc={MaxPrev}
-                        title={"Max&Program"}
-                        date={"June 2020"}
-                        preview={"\"Preserving invariants while giving clients the freedom to be creative in their implementations within\n" +
-                        "                the specified constraints is extremely important in computer science, and this idea is also the basis\n" +
-                        "                of the design decisions I made when developing this app. Because my intended audience...\""}
+                    <Col>
+                        <a
+                            href="mailto:changd8@uw.edu"
+                            title="Email me!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaRegEnvelope />
+                        </a>
+                    </Col>
 
-                    />
+                    <Col>
+                        <a
+                            href={resume}
+                            title="Check out my Resume!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaFilePdf />
+                        </a>
+                    </Col>
+
+                    <Col>
+
+                    </Col>
                 </Row>
+                <br/>
+                <hr/>
+                <br/>
+                <Header headerText="Project Previews"/>
+                <ProjectPreview
+                    imageSrc={MaxPrev}
+                    title={"Max&Program"}
+                    date={"June 2020"}
+                    preview={"\"Preserving invariants while giving clients the freedom to be creative in their implementations within\n" +
+                    "                the specified constraints is extremely important in computer science, and this idea is also the basis\n" +
+                    "                of the design decisions I made when developing this app. Because my intended audience...\""}
+
+                />
+
             </footer>
         </Layout>
     );
