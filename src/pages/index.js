@@ -36,7 +36,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaGithub />
+                            <i className='fas'><FaGithub /></i>
                         </a>
                     </Col>
                     <Col>
@@ -46,7 +46,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaLinkedinIn />
+                            <i className='fas'><FaLinkedinIn /></i>
                         </a>
                     </Col>
 
@@ -57,7 +57,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaRegEnvelope />
+                            <i className='fas'><FaRegEnvelope /></i>
                         </a>
                     </Col>
 
@@ -68,7 +68,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaFilePdf />
+                            <i className='fas'><FaFilePdf /></i>
                         </a>
                     </Col>
 
