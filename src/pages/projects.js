@@ -5,6 +5,10 @@ import Layout from "../components/layout"
 import Video from "../components/video"
 import "./pagesStyle.css"
 
+import Chess from "../images/ChessBot.png";
+import Paths from "../images/CampusPaths.png";
+import Image from "../components/image";
+
 export default function Projects() {
     return (
         <Layout>
@@ -12,7 +16,7 @@ export default function Projects() {
             <div className="center">
                 <p>Here are some of the projects I am working on.</p>
             </div>
-            <Header headerText="Max&Program"/>
+            <Header id="Max&Program" headerText="Max&Program"/>
             <p>
                 As someone who loves powerlifting, I am fascinated by the many variations of effective
                 training programs that powerlifting coaches put out online, and I enjoy analyzing these different
@@ -53,6 +57,36 @@ export default function Projects() {
                 videoSrcURL="https://www.youtube.com/embed/-QGvSEZoLeQ?loop=1&playlist=-QGvSEZoLeQ"
                 videoTitle="1RM Calculator"
             />
+            <br/>
+            <hr/>
+            <br/>
+            <Header id="Chess" headerText="Chess Bot"/>
+            <p>
+                For Data Structures and Parallelism (CSE 332), my partner and I implemented a chess bot algorithm in
+                Java that efficiently searches for the optimal move up to 6 plys, using both sequential and parallel Minimax.
+            </p>
+            <p>
+                We experimented with the sequential and parallel Minimax algorithms on 63 fens, or board states,
+                and discovered that using the optimal sequential cutoff for the parallel searching algorithm, our
+                parallel searcher performed remarkably, with average runtimes three times faster than those of our
+                sequential searcher.
+            </p>
+            <Image imgSrc={Chess}/>
+            <br/>
+            <hr/>
+            <br/>
+            <Header id="Paths" headerText="Campus Paths"/>
+            <p>
+                For Software Development and Implementation (CSE 331), I explored the Model-View-Controller design
+                pattern where I created a graphical user interface that allows users to find the shortest path between
+                two points on a map of the University of Washington, Seattle campus.
+            </p>
+            <p>
+                I implemented a Spark Java server for the backend that allows other applications to send requests to
+                query data from a shortest-path finding applications. I used React to design the GUI that draws the
+                shortest path between two user-selected buildings on the campus map.
+            </p>
+            <Image imgSrc={Paths}/>
         </Layout>
     );
 }

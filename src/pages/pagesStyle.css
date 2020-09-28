@@ -6,3 +6,15 @@
 .fas{
     font-size: 2em;
 }
+
+.button_styles {
+    border-style: solid;
+    padding: 3px;
+    border-radius: 1rem;
+    color: darkcyan;
+    background-color: aliceblue;
+}
+
+.button_styles:hover {
+    color: black;
+}

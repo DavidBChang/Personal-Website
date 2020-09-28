@@ -1,4 +1,4 @@
 import React from "react"
 export default function Header(props) {
-    return <h3>{props.headerText}</h3>
+    return <h3 id={props.id}>{props.headerText}</h3>
 }

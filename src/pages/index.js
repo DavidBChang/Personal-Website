@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Title from "../components/title";
 import Layout from "../components/layout"
 import Header from "../components/header"
@@ -9,8 +10,8 @@ import {
 } from 'react-icons/fa';
 import Row from "react-bootstrap/Row";
 import MaxPrev from "../images/Max&ProgramPreview.png";
-import Container from "react-bootstrap/Container";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Chess from "../images/ChessBot.png";
+import Paths from "../images/CampusPaths.png";
 import resume from "../../static/Resume.pdf"
 
 export default function Home() {
@@ -25,9 +26,7 @@ export default function Home() {
             <footer>
                 <Header headerText="Links" />
                 <Row>
-                    <Col>
-
-                    </Col>
+                    <Col></Col>
 
                     <Col>
                         <a
@@ -60,7 +59,11 @@ export default function Home() {
                             <i className='fas'><FaRegEnvelope /></i>
                         </a>
                     </Col>
-
+                    <Col></Col>
+                </Row>
+                <br/>
+                <Row>
+                    <Col></Col>
                     <Col>
                         <a
                             href={resume}
@@ -68,13 +71,10 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <i className='fas'><FaFilePdf /></i>
+                            <div className="button_styles text-center">Check out my resume</div>
                         </a>
                     </Col>
-
-                    <Col>
-
-                    </Col>
+                    <Col></Col>
                 </Row>
                 <br/>
                 <hr/>
@@ -84,12 +84,34 @@ export default function Home() {
                     imageSrc={MaxPrev}
                     title={"Max&Program"}
                     date={"June 2020"}
-                    preview={"\"Preserving invariants while giving clients the freedom to be creative in their implementations within\n" +
-                    "                the specified constraints is extremely important in computer science, and this idea is also the basis\n" +
-                    "                of the design decisions I made when developing this app. Because my intended audience...\""}
+                    headerId={"Max&Program"}
+                    preview={"\"Preserving invariants while giving clients the freedom to be creative in their implementations within " +
+                            "the specified constraints is extremely important in computer science, and this idea is also the basis " +
+                            "of the design decisions I made when developing this app. Because my intended audience...\""}
 
                 />
+                <br/>
+                <ProjectPreview
+                    imageSrc={Chess}
+                    title={"Chess Bot"}
+                    date={"August 2020"}
+                    headerId={"Chess"}
+                    preview={"\"For Data Structures and Parallelism (CSE 332), my partner and I implemented a chess bot " +
+                            "algorithm in Java that efficiently searches for the optimal move " +
+                            " up to 6 plys, using both sequential and parallel Minimax....\""}
 
+                />
+                <br/>
+                <ProjectPreview
+                    imageSrc={Paths}
+                    title={"Campus Paths"}
+                    date={"May 2020"}
+                    headerId={"Paths"}
+                    preview={"\"I explored the Model-View-Controller design pattern where I created a graphical user " +
+                            "interface that allows users to find the shortest path between " +
+                            "two points on a map of the University of Washington, Seattle campus....\""}
+
+                />
             </footer>
         </Layout>
     );
