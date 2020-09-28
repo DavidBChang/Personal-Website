@@ -14,7 +14,7 @@ const ProjectPreview = props => {
                     <div className="container">
                         <Image imgSrc={props.imageSrc}/>
                         <div className="middle">
-                            <Link to={"/projects"} className="text">Go to Projects</Link>
+                            <Link to={link} className="text">View in Projects</Link>
                         </div>
                     </div>
                 </Col>
