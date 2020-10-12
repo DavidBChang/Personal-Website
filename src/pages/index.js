@@ -19,7 +19,7 @@ export default function Home() {
         <Layout>
             <Title titleText="About Me" />
             <p>
-                I am an aspiring software developer and a rising junior at <br/> University of Washington, Seattle,
+                I am an aspiring software developer and a junior at <br/> University of Washington, Seattle,
                 studying computer science.
             </p>
 
