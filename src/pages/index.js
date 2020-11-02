@@ -12,7 +12,7 @@ import Row from "react-bootstrap/Row";
 import MaxPrev from "../images/Max&ProgramPreview.png";
 import Chess from "../images/ChessBot.png";
 import Paths from "../images/CampusPaths.png";
-import resume from "../../static/Resume.pdf"
+import resume from "../../static/DavidChangResume.pdf"
 
 export default function Home() {
     return (
