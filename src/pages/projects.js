@@ -9,6 +9,16 @@ import Chess from "../images/ChessBot.png";
 import Paths from "../images/CampusPaths.png";
 import Image from "../components/image";
 
+import ContentACPS from "../images/artistic_content_photograph_style/seattle_watercolor_content.png"
+import StyleACPS from "../images/artistic_content_photograph_style/seattle_style.png"
+import ResultACPS from "../images/artistic_content_photograph_style/seattle_watercolor_content_seattle_style.png"
+import ContentPCPS from "../images/photograph_content_photograph_style/seattle_content.png"
+import StylePCPS from "../images/photograph_content_photograph_style/nyc_style.png"
+import ResultPCPS from "../images/photograph_content_photograph_style/seattle_content_nyc_style.png"
+import ContentSR from "../images/super_resolution/cat_blur_content.png"
+import StyleSR from "../images/super_resolution/cat_style.png.png"
+import ResultSR from "../images/super_resolution/cat_blur_content_cat_style.png.png"
+
 export default function Projects() {
     return (
         <Layout>
@@ -16,6 +26,57 @@ export default function Projects() {
             <div className="center">
                 <p>Here are some of the projects I am working on.</p>
             </div>
+            <Header id="NeuralTransfer" headerText="Neural Style Transfer Experiments"/>
+            <p>
+                Neural style transfer is a way to compose a given image with the style of another.
+                As discussed in the paper “A Neural Algorithm of Artistic Style” by Leon A. Gatys, Alexander S. Ecker
+                and Matthias Bethge, the general idea behind Neural-Transfer requires that we take a content-image,
+                a style-image, and an input image, which is the same as the content-image, and then transform the
+                input image to minimize its content-distance with the content-image and its style-distance with
+                the style-image.
+            </p>
+            <p>
+                The algorithm uses Convolutional Neural Networks to apply filters to the input image in order to
+                transform it into various representations that emphasize certain features. Incidentally, higher
+                layers in the CNN are better at filtering for the high-level contents of the image, such as the
+                objects and their arrangements in the image, while disregarding the exact pixel values of the
+                input. Preserving the content in the content-image is accomplished by minimizing the mean-squared
+                distance between the feature maps of the input image and the content-image, and we can generate
+                the style of the style-image by minimizing the mean-squared distance between the entries of the
+                gram matrix from the input image and the gram matrix of the style-image, where the gram matrix
+                is the result of multiplying the reshaped version of the feature maps with its transpose.
+            </p>
+            <p>
+                In general, many people would intuitively think about style as the manner in which an artist
+                holistically expresses the art’s theme, where it cannot be reduced into independent colors and
+                features. However, because style reconstruction involves finding feature correlations using a
+                gram matrix, it seems that this Neural-Transfer model represents style as the texture of the
+                image. So, I wanted to explore the performances of this Neural-Transfer implementation as outlined
+                in the paper on various types of content-image and style-image pairings, where the style-images
+                may not have a uniformly artistic style, in order to test its ability to reconstruct style as we
+                know it instead of just the image’s texture.
+            </p>
+            <p>
+                Neural style transfer is typically used to reproduce existing photographs with new artistic painting
+                styles. In these experiments, however, I tested Neural-Transfer on less conventional combinations,
+                such as artistic content-image paired with photograph style-image, photograph content-image paired
+                with photograph style-image, and low-resolution content-image and high-resolution style-image.
+            </p>
+            <p>
+                First, I experimented with using an artistic painting as the content-image and a photograph as the
+                style-image, because I was interested to see whether the neural network would produce a version of
+                the artistic content-image that looks more realistic. I chose a watercolor drawing of Seattle as
+                the content-image, and I picked a raw and unedited photograph of Seattle as the style-image, hoping
+                to bring the watercolor image to real life.
+            </p>
+            <p>The three images are shown below.</p>
+            <Image imgSrc={ContentACPS}/>
+            <Image imgSrc={StyleACPS}/>
+            <Image imgSrc={ResultACPS}/>
+
+
+
+
             <Header id="Max&Program" headerText="Max&Program"/>
             <p>
                 As someone who loves powerlifting, I am fascinated by the many variations of effective
