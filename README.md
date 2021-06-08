@@ -1,2 +1,2 @@
 # Personal-Website
-https://davidbchang.netlify.app
+http://students.washington.edu/changd8/
